@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Simple Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="browser-container">
+    <div class="address-bar-container">
+      <button id="back-btn">←</button>
+      <button id="forward-btn">→</button>
+      <input type="text" id="url-input" placeholder="Enter URL">
+      <button id="go-btn">Go</button>
+    </div>
+    <webview id="web-view" src="https://electronjs.org/" class="web-content"></webview>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
